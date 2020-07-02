@@ -1,5 +1,5 @@
 
-# Typora-theme-orange-heart
+# typora-theme-orange-heart
 
 [English | [中文](README_CN.md)]
 

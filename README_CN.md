@@ -1,4 +1,4 @@
-# Typora-theme-orange-heart
+# typora-theme-orange-heart
 
 [[English](README.md) | 中文]
 

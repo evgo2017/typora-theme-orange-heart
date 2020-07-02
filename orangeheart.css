@@ -290,3 +290,7 @@
   text-decoration: underline;
   color: white !important;
 }
+.CodeMirror div.CodeMirror-cursor {
+  border-left: 1px solid rgb(239, 112, 96);
+  z-index: 3;
+}
