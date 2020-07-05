@@ -220,11 +220,15 @@
   background-position: 10px 10px;
 }
 .cm-s-inner.CodeMirror {
-  padding: 0 1rem .5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   background-color: #292d3e;
   color: #a6accd;
   font-family: Consolas;
   border-radius: 4px;
+}
+.CodeMirror-lines {
+  padding-left: 4px;
 }
 .cm-s-inner .cm-keyword {
   color: #c792ea;
