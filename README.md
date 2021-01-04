@@ -22,7 +22,7 @@ This style comes from the idea of using [markdown-nice ](https://github.com/mdni
 
 ## 3 Screenshot
 
-To be added.
+![typora_theme_orange_heart](./assets/typora_theme_orange_heart.png)
 
 ## 4 Other
 

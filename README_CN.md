@@ -21,7 +21,7 @@
 
 ## 3 截图
 
-待补充。
+![typora_theme_orange_heart](./assets/typora_theme_orange_heart.png)
 
 ## 4 其他
 
