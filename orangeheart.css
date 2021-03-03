@@ -150,6 +150,12 @@
   max-width: 100%;
 }
 
+#write span img {
+  display: inline-block;
+  border-right: 0px;
+  border-left: 0px;
+}
+
 /*表格*/
 #write table {
   display: table;
