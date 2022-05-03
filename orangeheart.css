@@ -1,7 +1,7 @@
 /* 全局属性 */
 #write {
   max-width: 860px;
-  font-size: 16px;
+  font-size: 1rem;
   color: black;
   padding: 0 10px;
   line-height: 1.6;
@@ -14,15 +14,18 @@
 }
 
 /*段落*/
-#write p {
-  font-size: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+#write + p, 
+#write blockquote p {
+  font-size: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   margin: 0;
-  line-height: 26px;
+  line-height: 1.5rem;
   color: black;
 }
-
+#write div[mdtype=toc] {
+  font-size: 1rem;
+}
 
 /*标题*/
 #write h1,
@@ -31,8 +34,7 @@
 #write h4,
 #write h5,
 #write h6 {
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin: 1.2em 0 1em;
   padding: 0px;
   font-weight: bold;
   color: black;
@@ -58,17 +60,18 @@
  display: inline-block;
  content: "";
  vertical-align: bottom;
- border-bottom: 36px solid #efebe9;
- border-right: 20px solid transparent;
+ border-bottom: 1.25rem solid #efebe9;
+ border-right: 1.25rem solid transparent;
 }
+
 #write h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 #write h4 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 #write h5 {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 #write h6 {
   font-size: 1rem;
@@ -94,7 +97,7 @@
 #write li section {
   margin-top: 5px;
   margin-bottom: 5px;
-  line-height: 26px;
+  line-height: 1.7rem;
   text-align: left;
   color: rgb(1,1,1); /* 只要是纯黑色微信编辑器就会把color这个属性吞掉。。。*/
   font-weight: 500;
@@ -103,20 +106,14 @@
 /*引用*/
 #write blockquote {
   display: block;
-  font-size: 0.9em;
+  font-size: .9em;
   overflow: auto;
-  overflow-scrolling: touch;
   border-left: 3px solid rgb(239, 112, 96);
   color: #6a737d;
   padding: 10px 10px 10px 20px;
   margin-bottom: 20px;
   margin-top: 20px;
   background: #fff9f9;
-}
-#write blockquote p {
-  margin: 0px;
-  color: black;
-  line-height: 26px;
 }
 
 /*链接*/
@@ -132,7 +129,7 @@
 /*行内代码*/
 #write p code,
 #write li code {
-  font-size: 14px;
+  font-size: .9rem;
   word-wrap: break-word;
   padding: 2px 4px;
   border-radius: 4px;
@@ -174,7 +171,7 @@
 }
 #write table tr th,
 #write table tr td {
-  font-size: 16px;
+  font-size: 1rem;
   border: 1px solid #ccc;
   padding: 5px 10px;
   text-align: left;
@@ -225,16 +222,17 @@
   border-radius: 5px;
   background-position: 10px 10px;
 }
+
+/* CodeMirror 相关内容 */
+.CodeMirror-wrap .CodeMirror-scroll {
+  overflow-x: auto;
+}
 .cm-s-inner.CodeMirror {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding: .5rem;
   background-color: #292d3e;
   color: #a6accd;
   font-family: Consolas;
   border-radius: 4px;
-}
-.CodeMirror-lines {
-  padding-left: 4px;
 }
 .cm-s-inner .cm-keyword {
   color: #c792ea !important;
