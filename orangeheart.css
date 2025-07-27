@@ -47,14 +47,23 @@
   border-bottom: 2px solid rgb(239, 112, 96);
 }
 #write h2 span {
- display: inline-block;
  font-weight: bold;
  background: rgb(239, 112, 96);
  color: #ffffff;
- padding: 3px 10px 1px;
- border-top-right-radius: 3px;
+ padding-top: 3px;
+ padding-bottom: 1px;
+}
+#write h2 > span {
+ display: inline-block;
+}
+#write h2 > span:first-child {
+ padding-left: 10px;
  border-top-left-radius: 3px;
- margin-right: 3px;
+}
+#write h2 span:last-child {
+  margin-right: 3px; 
+  padding-right: 10px;
+  border-top-right-radius: 3px;
 }
 #write h2:after {
  display: inline-block;
