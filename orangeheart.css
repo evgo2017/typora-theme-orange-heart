@@ -46,21 +46,52 @@
   font-size: 1.3rem;
   border-bottom: 2px solid rgb(239, 112, 96);
 }
+@media print {
+  /* 为解决和 border-bottom 之间的 1px 空白 */
+  #write h2 *  {
+    margin-bottom:-1px;   /* 把背景区域往下拖 1 px */
+  }
+}
+
+#write h2 a,
 #write h2 span {
  font-weight: bold;
  background: rgb(239, 112, 96);
  color: #ffffff;
  padding-top: 3px;
  padding-bottom: 1px;
+ border-bottom: none; /* html 结构下 a 标签的 border 会绘制出来  */
 }
+#write h2 > a,
 #write h2 > span {
  display: inline-block;
+  word-spacing: 0;  /* 把空格宽度压成 0（负值可根据需要微调） */
 }
-#write h2 > span:first-child {
+@media print {
+  /* 为解决和 相邻元素 之间的 1px 空白 */
+  #write h2 > * + * {
+    margin-left: -1px;   /* 把背景区域往左拖 1 px */
+  }
+  #write h2 > *:nth-child(2) { 
+    margin-left: 0; /* pdf 打印前面多了一个元素，所以这个元素需要回位  */
+  }
+}
+
+/* (ˉ▽ˉ!!!)... md 编辑器、html、pdf 的 dom 结构 都不一样。论良好结构的重要性。 */
+/* []() 结构在 md 编辑器渲染为 <span>, html 渲染为 <a> */
+#write h2 > *:first-child {
  padding-left: 10px;
  border-top-left-radius: 3px;
 }
-#write h2 span:last-child {
+@media print {
+  /* pdf 打印前面多了一个元素（猜出来的 =.= !!!)  */
+  #write h2 > *:nth-child(2) { 
+    padding-left: 10px;
+    border-top-left-radius: 3px;
+  }
+}
+
+#write h2 > *:last-child {
   margin-right: 3px; 
   padding-right: 10px;
   border-top-right-radius: 3px;
