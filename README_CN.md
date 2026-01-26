@@ -27,4 +27,8 @@
 
 * [Typora 主题](http://theme.typora.io/)
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=evgo2017/typora-theme-orange-heart&type=date&legend=bottom-right)](https://www.star-history.com/#evgo2017/typora-theme-orange-heart&type=date&legend=bottom-right)
+
 MIT @ evgo2017
